@@ -1,0 +1,43 @@
+canvas {
+    border: none;
+    border-radius: 10px;
+    background-color: ""
+}
+
+.container-fluid {
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.container-fluid::before {
+    content: "";
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+}
+
+.heading {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    padding-bottom: 10px;
+}
+
+.footer {
+    position: fixed;
+    padding-top: 10px;;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
